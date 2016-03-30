@@ -10,11 +10,13 @@ public class Jurnal1 {
         System.out.print("Masukkan Angka : ");
         int n = scnr.nextInt();
         int count = 1;
+        int sum = 0;
         int c = 1, b = 1, a = 0;
         while(count < n){
             if(count == 1)
             {
                 System.out.print(c+" ");
+                sum = c;
             }
             c = b + a;
             System.out.print(c+" ");
@@ -22,8 +24,10 @@ public class Jurnal1 {
             a = b;
             b = c;
             
+            sum = sum + c;
             count++;
         }
+        System.out.println(sum);
         System.out.println("");
     }
     
